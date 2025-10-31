@@ -65,30 +65,47 @@ body
     100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-.nav_links
+.main_nav 
 {
     display: flex;
-    font-size: 16px;
-    font-weight: bold;
+    gap: 20px;
 }
 
-.nav_link
+.main_nav a 
 {
     text-decoration: none;
-    color: var(--dark-text);
-    padding: 0 20px;
-    transition: color 0.3s;
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.nav_link:hover
+.profile_link 
 {
-    color: #6c39d1;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.nav_link.active
+.profile_placeholder 
 {
-    color: #725490;
-    padding-bottom: 5px;
+    width: 36px;
+    height: 36px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.main_nav a.active 
+{
+    color: #933eb7;
 }
 
 .search_section
